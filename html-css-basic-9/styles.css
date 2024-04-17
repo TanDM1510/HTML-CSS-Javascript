@@ -1,0 +1,57 @@
+.container {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  overflow: auto;
+}
+
+.contents {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+  gap: 50px;
+}
+.description {
+  text-align: center;
+  font-style: italic;
+  line-height: 20px;
+}
+.content {
+  display: grid;
+  grid-template-columns: auto auto;
+  place-items: center;
+  gap: 30px;
+}
+
+.image {
+  width: 50%;
+  height: 100px;
+  object-fit: contain;
+}
+
+.item {
+  display: grid;
+  place-items: center;
+  gap: 10px;
+}
+.title {
+  font-size: xx-large;
+  font-weight: bold;
+}
+@media screen and (max-width: 450px) {
+  .contents {
+    width: 100%;
+  }
+  .content {
+    grid-template-columns: auto;
+  }
+  .title {
+    font-size: x-large;
+  }
+  .image {
+    height: auto;
+    width: 20%;
+  }
+}

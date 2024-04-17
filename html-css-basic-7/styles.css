@@ -1,0 +1,114 @@
+.container {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.content {
+  width: 60%;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+.items {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+  width: 50%;
+}
+
+.btn,
+.btn-2 {
+  width: 80%;
+  margin-top: 20px;
+  background-color: rgb(103, 154, 230);
+  color: white;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  height: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-2 {
+  width: 40%;
+  background-color: rgb(103, 230, 160);
+  cursor: pointer;
+}
+
+.title {
+  font-size: 29px;
+  color: rgb(189, 186, 186);
+}
+
+.description {
+  color: rgb(189, 186, 186);
+  font-size: small;
+  line-height: 25px;
+}
+
+.dash {
+  width: 90%;
+  border: 1px solid rgb(189, 186, 186);
+  margin-top: 30px;
+}
+@media screen and (max-width: 1200px) {
+  .content {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .content {
+    width: 100%;
+    gap: 0;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .container {
+    overflow: auto;
+  }
+}
+@media screen and (max-width: 760px) {
+  .container {
+    overflow: auto;
+  }
+  .items {
+    display: grid;
+    place-items: center;
+    grid-template-columns: auto;
+  }
+
+  .btn {
+    width: 100%;
+  }
+  .btn-2 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 320px) {
+  .title {
+    font-size: medium;
+  }
+  .description {
+    font-size: small;
+  }
+  .btn {
+    font-size: small;
+  }
+  .btn-2 {
+    font-size: small;
+  }
+}

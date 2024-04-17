@@ -1,0 +1,97 @@
+.container {
+  width: 100%;
+  height: 300px;
+  background-image: url("./images/bai4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.items {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 200px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.title {
+  text-align: center;
+  font-size: xx-large;
+  font-weight: bold;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.description {
+  font-weight: 200;
+  font-size: large;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.icon {
+  text-align: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 1200px) {
+  .items {
+    gap: 70px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .items {
+    gap: 80px;
+  }
+  .title {
+    font-size: large;
+  }
+  .description {
+    font-size: small;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .description {
+    font-size: 10px;
+  }
+  .items {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    gap: 10px;
+  }
+  .item {
+    gap: 10px;
+  }
+  .title {
+    font-size: small;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .container {
+    overflow: auto;
+    height: auto;
+  }
+  .items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    gap: 5px;
+  }
+  .item {
+    padding: 5px;
+  }
+}

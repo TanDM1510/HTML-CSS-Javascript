@@ -1,0 +1,38 @@
+.container {
+  width: 100%;
+}
+.content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.card {
+  display: grid;
+  place-items: center;
+  background-color: gainsboro;
+  padding: 20px;
+}
+.icon {
+  display: grid;
+  place-items: center;
+  color: rgb(56, 133, 133);
+  font-size: 30px;
+  border-radius: 100%;
+  border: 2px;
+  border-style: solid;
+  height: 60px;
+  width: 60px;
+}
+@media screen and (max-width: 992px) {
+  .content {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    grid-template-columns: auto;
+  }
+}

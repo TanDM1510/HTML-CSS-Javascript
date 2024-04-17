@@ -1,0 +1,136 @@
+.container {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+.title {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: start;
+  margin: 0;
+}
+.dash {
+  border: 1px;
+  width: 60px;
+  border-color: orange;
+  border-style: solid;
+  margin-bottom: 20px;
+}
+
+.contents {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 20px;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.contacts {
+  display: flex;
+  align-content: center;
+  justify-content: start;
+  flex-direction: column;
+  gap: 30px;
+  width: 50%;
+  height: 100%;
+}
+.information {
+  display: flex;
+  gap: 20px;
+  color: gray;
+}
+.description {
+  font-size: 14px;
+}
+.contact-title {
+  font-size: 16px;
+  font-weight: bold;
+}
+.form {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: start;
+  flex-direction: column;
+  gap: 30px;
+}
+.input,
+.textarea {
+  width: calc(100%);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  margin-bottom: 10px;
+  font-size: small;
+}
+
+.textarea {
+  height: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+button {
+  padding: 10px 20px;
+  background-color: #69d1df;
+  color: white;
+  border: 1px;
+  border-color: #66dbeb;
+  border-style: solid;
+  border-radius: 3px;
+  cursor: pointer;
+  width: 40%;
+}
+@media screen and (max-width: 1200px) {
+  .contents {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .contents {
+    width: 90%;
+  }
+  .contact-title {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .button {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .contents {
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+  }
+  .contacts {
+    gap: 10px;
+  }
+  .form {
+    gap: 10px;
+  }
+  .contact-title {
+    text-align: center;
+  }
+  .button {
+    width: 100%;
+    padding: 5px;
+  }
+  .contents {
+    padding-bottom: 20px;
+  }
+  .input,
+  .textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    margin-bottom: 10px;
+    font-size: 10px;
+    padding: 5px 0 5px 0;
+  }
+  .description {
+    text-wrap: wrap;
+  }
+}

@@ -1,0 +1,13 @@
+.container {
+  display: grid;
+  place-items: center;
+  align-content: center;
+  padding: 30px;
+}
+.text-footer {
+  text-align: center;
+}
+.text-footer :hover {
+  text-decoration: underline;
+  cursor: pointer;
+}

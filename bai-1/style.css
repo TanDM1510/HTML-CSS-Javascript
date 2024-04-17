@@ -1,0 +1,71 @@
+.a1 {
+  height: 2000px;
+  width: 1000px;
+  border-color: red;
+  border-style: solid;
+  position: relative;
+}
+.a2 {
+  height: 200px;
+  width: 400px;
+  border-color: brown;
+  border-style: solid;
+  position: sticky;
+  top: 0;
+}
+.a3 {
+  height: 200px;
+  width: 400px;
+  border-color: orange;
+  border-style: solid;
+  position: fixed;
+  bottom: 0;
+}
+.a4 {
+  height: 300px;
+  width: 900px;
+  border-color: blue;
+  border-style: solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.a5 {
+  height: 200px;
+  width: 600px;
+  border-color: purple;
+  border-style: solid;
+  position: sticky;
+  top: 0;
+}
+.a6 {
+  height: 100px;
+  width: 500px;
+  border-color: yellow;
+  border-style: solid;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 780px) {
+  .a1 {
+    width: 500px;
+  }
+  .a2 {
+    width: 200px;
+  }
+  .a3 {
+    width: 200px;
+  }
+  .a4 {
+    width: 450px;
+  }
+  .a5 {
+    width: 300px;
+  }
+  .a6 {
+    width: 250px;
+  }
+}
